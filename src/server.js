@@ -7,7 +7,7 @@ const onRequest = (request, response) => {
   console.log(request.url);
   if (request.url === '/random') {
     response.writeHead(200, { 'Content-Type': 'text/plain' });
-    response.write(`Hello - ${shortid.generate()}`);
+    response.write(`Hello - ${shortid.generate()}!!!`);
     response.end();
   } else {
     response.writeHead(200, { 'Content-Type': 'text/html' });
